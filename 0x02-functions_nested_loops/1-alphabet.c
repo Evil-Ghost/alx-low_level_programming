@@ -12,15 +12,5 @@ void print_alphabet(void)
 	{
 		_putchar('c');
 	}
-}
-
-/**
- * main - call the print_alphabet function
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	_putchar('\n');
 }
