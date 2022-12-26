@@ -18,9 +18,9 @@ int main(void)
 	while (i < 10)
 	{
 		j = 0;
-		while(j < 10)
+		while (j < 10)
 		{
-			k = i;
+			k = 0;
 			while (k < 10)
 			{
 				l = j + 1;
