@@ -2,7 +2,7 @@
 
 /**
  * main - prints the first fibonacci numbers
- * 
+ *
  * Return: Always 0(success)
  */
 int main(void)
