@@ -9,7 +9,7 @@
 int main(void)
 {
 	int a, b, sum, even_sum;
-	
+
 	a = 0;
 	b = 1;
 	sum = 0;
