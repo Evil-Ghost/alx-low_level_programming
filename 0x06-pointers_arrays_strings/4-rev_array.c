@@ -3,7 +3,7 @@
 
 /**
  * reverse_array - reverses an array according to number of n
- * @r: pointer to the array
+ * @a: pointer to the array
  * @n: number of elements to be reversed
  *
  * Return: no return value(void)
