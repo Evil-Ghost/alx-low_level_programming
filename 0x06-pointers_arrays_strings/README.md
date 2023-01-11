@@ -36,14 +36,14 @@ This Project is a continuation on pointers, arrays and strings in C
 
 ### Completed tasks
 
-- [ ] task 0
-- [ ] task 1
-- [ ] task 2
-- [ ] task 3
-- [ ] task 4
-- [ ] task 5
-- [ ] task 6
-- [ ] task 7
+- [x] task 0
+- [x] task 1
+- [x] task 2
+- [x] task 3
+- [x] task 4
+- [x] task 5
+- [x] task 6
+- [x] task 7
 - [ ] task 8
 - [ ] task 9
 - [ ] task 10
@@ -75,13 +75,13 @@ This Project is a continuation on pointers, arrays and strings in C
 
 
 [Task 0]: ./0-strcat.c
-[Task 1]: ./replace-this-with-file-name
-[Task 2]: ./replace-this-with-file-name
-[Task 3]: ./replace-this-with-file-name
-[Task 4]: ./replace-this-with-file-name
-[Task 5]: ./replace-this-with-file-name
-[Task 6]: ./replace-this-with-file-name
-[Task 7]: ./replace-this-with-file-name
+[Task 1]: ./1-strncat.c
+[Task 2]: ./2-strncpy.c
+[Task 3]: ./3-strcmp.c
+[Task 4]: ./4-rev_array.c
+[Task 5]: ./5-string_toupper.c
+[Task 6]: ./6-cap_string.c
+[Task 7]: ./7-leet.c
 [Task 8]: ./replace-this-with-file-name
 [Task 9]: ./replace-this-with-file-name
 [Task 10]: ./replace-this-with-file-name
@@ -104,24 +104,76 @@ Write a function that concatenates two strings.
 
 ### Task 1
 
+Write a function that concatenates two strings.
+
+Prototype: `char *_strncat(char *dest, char *src, int n);`
+The `_strncat` function is similar to the `_strcat` function, except that
+- it will use at most `n` bytes from `src`; and
+- `src` does not need to be null-terminated if it contains `n` or more bytes
+Return a pointer to the resulting string `dest`
+
+**Task file:** [1-strncat.c][Task 1]
 
 ### Task 2
 
+Write a function that copies a string.
+
+- Prototype: char `*_strncpy(char *dest, char *src, int n);`
+- Your function should work exactly like `strncpy`
+
+**Task file:** [2-strncpy.c][Task 2]
 
 ### Task 3
 
+Write a function that compares two strings.
+
+- Prototype: `int _strcmp(char *s1, char *s2);`
+- Your function should work exactly like `strcmp`
+
+**Task file:** [3-strcmp.c][Task 3]
 
 ### Task 4
 
+Write a function that reverses the content of an array of integers.
+
+- Prototype: `void reverse_array(int *a, int n);`
+- Where `n` is the number of elements of the array
+
+**Task file:** [4-rev_array.c][Task 4]
 
 ### Task 5
 
+Write a function that changes all lowercase letters of a string to uppercase.
+
+- Prototype: `char *string_toupper(char *);`
+
+**Task file:** [5-string_toupper.c][Task 5]
 
 ### Task 6
 
+Write a function that capitalizes all words of a string.
+
+- Prototype: `char *cap_string(char *);`
+- Separators of words: space, tabulation, new line, `,`, `;`, `.`, `!`, `?`, `"`, `(`, `)`, `{`, and `}`
+
+**Task file:** [6-cap_string.c][Task 6]
 
 ### Task 7
 
+Write a function that encodes a string into 1337.
+
+- Letters `a` and `A` should be replaced by `4`
+- Letters `e` and `E` should be replaced by `3`
+- Letters `o` and `O` should be replaced by `0`
+- Letters `t` and `T` should be replaced by `7`
+- Letters `l` and `L` should be replaced by `1`
+- Prototype: `char *leet(char *);`
+- You can only use one `if` in your code
+- You can only use two loops in your code
+- You are not allowed to use `switch`
+- You are not allowed to use any ternary operatio
+
+**Task file:** [7-leet.c][Task 7]
 
 ## Advanced tasks
 
@@ -148,7 +200,7 @@ Write a function that concatenates two strings.
 
 ### What I learned
 
-I learned about strings...(Replace this paragraph with yours)
+I leared more on pointers and more importantly how to manipulate arrays
 
 ## Author
 
@@ -157,6 +209,7 @@ I learned about strings...(Replace this paragraph with yours)
 
 ## Acknowledgements
 
+Not Available...
 
 ## Credits
 
