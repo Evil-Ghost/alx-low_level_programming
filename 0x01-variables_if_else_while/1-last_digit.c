@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - prints the last digit of a randomly generated number 
+ * main - prints the last digit of a randomly generated number
  *
  * Return: Always 0 (Success)
  */
