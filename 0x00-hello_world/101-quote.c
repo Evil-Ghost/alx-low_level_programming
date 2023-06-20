@@ -3,7 +3,7 @@
 /**
  * main - prints a string without using the stdio library
  *
- * Return: Alwasy (0) success
+ * Return: Alwasy (1) success
  */
 int main(void)
 {
