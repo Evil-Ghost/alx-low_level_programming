@@ -13,6 +13,8 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	char *new_mem;
 
+	if (size <= 0)
+		return (NULL);
 	new_mem = malloc(sizeof(char) * size);
 
 	if (new_mem == NULL)
