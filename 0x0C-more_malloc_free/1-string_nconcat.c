@@ -26,10 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (j = 0; *(str2 + j) != '\0'; j++)
 		;
 
-	if (n > j || n == j)
-		n = j + 1;
+	if (n >= j)
+		n = j;
 	n = (i + n);
-	new_mem = malloc(sizeof(char) * n);
+	new_mem = malloc(sizeof(char) * (n + 1));
 	if (new_mem == NULL)
 		return (NULL);
 
@@ -47,6 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
+	*(new_mem + i) = '\0';
 
 	return (new_mem);
 }
