@@ -36,7 +36,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size > old_size)
 		x = old_size;
 	i = 0;
-	while (i <= x)
+	while (i < x)
 	{
 		*(new_mem + i) = *(old_mem + i);
 		i++;
