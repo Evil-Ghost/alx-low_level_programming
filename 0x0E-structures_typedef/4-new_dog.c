@@ -2,6 +2,27 @@
 #include <stdlib.h>
 
 /**
+ * _strcpy - compies a string from src to dest
+ * @src: string source
+ * @dest: destination of string
+ *
+ * Return: returns a pointer to new alloc mem
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	i = 0;
+	while (*(src + i) != '\0')
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	*(dest + i) = '\0';
+	return (dest);
+}
+
+/**
  * _strlen - calculates the length of a string
  * @str: string argument
  *
@@ -42,7 +63,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nw_dog);
 		return (NULL);
 	}
-	nw_dog->name = name;
+	_strcpy(nw_dog->name, name);
 
 	nw_dog->age = age;
 
@@ -53,7 +74,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nw_dog);
 		return (NULL);
 	}
-	nw_dog->owner = owner;
+	_strcpy(nw_dog->owner, owner);
 
 	return (nw_dog);
 }
