@@ -27,8 +27,8 @@ int main(int argc, char **argv)
 		return (99);
 	}
 
-	if ((argv[2][0] == '/' && argv[3] == 0) ||
-			(argv[2][0] == '%' && argv[3] == 0))
+	if ((argv[2][0] == '/' && argv[3][0] == 48) ||
+			(argv[2][0] == '%' && argv[3][0] == 48))
 	{
 		printf("Error\n");
 		return (100);
