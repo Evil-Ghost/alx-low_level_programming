@@ -11,7 +11,10 @@ void free_listint2(listint_t **head)
 	listint_t *current_node;
 
 	if (*head == NULL)
+	{
+		free(*head);
 		return;
+	}
 
 	current_node = *head;
 	while (current_node != NULL)
